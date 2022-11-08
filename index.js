@@ -26,5 +26,5 @@ function resetScore() {
     homePoints = 0
     awayPoints = 0
     homeScoreDisplay.textContent = homePoints
-    guestScoreDisplay.textContent = awayPoints
+    awayScoreDisplay.textContent = awayPoints
 }
