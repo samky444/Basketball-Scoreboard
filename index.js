@@ -2,17 +2,17 @@
 
 // declaration and intialization of variables
 let homePoints = 0 
-let guestPoints = 0
+let awayPoints = 0
 const homeScoreDisplay=document.getElementById("homeScore")
-const guestScoreDisplay=document.getElementById("guestScore")
+const awayScoreDisplay=document.getElementById("awayScore")
 document.getElementById("homeScore").textContent = homePoints
-document.getElementById("guestScore").textContent = guestPoints
+document.getElementById("awayScore").textContent = awayPoints
 
 
 // function for adding points (Guest)
-function addGuestPoint(points) {
-  guestPoints += points
-  guestScoreDisplay.textContent = guestPoints
+function addAwayPoint(points) {
+  awayPoints += points
+  awayScoreDisplay.textContent = awayPoints
 }
 
 // function for adding points (Home)
@@ -24,7 +24,7 @@ function addHomePoint(points) {
 // function for reseting the values back to zero
 function resetScore() {
     homePoints = 0
-    guestPoints = 0
+    awayPoints = 0
     homeScoreDisplay.textContent = homePoints
-    guestScoreDisplay.textContent = guestPoints
+    guestScoreDisplay.textContent = awayPoints
 }
