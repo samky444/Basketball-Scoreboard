@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+
+  <title>Basketball_Scoreboard</title>
+</head>
+<body>
+  <!-- Samuel Kiarie -- 11/06/2022-- Basketball Scoreboard -->
+
+	<!--create a div class container to wrap up all the div classes and 
+		tags in the body section; inside this div class, create another 
+		div class (scoreboard). Inside this div class, create 2 more div 
+		classes (team-score) and finally, 2 more div classes
+		(button wrappers)-->
+	<div class="container">
+		<div class="scoreboard">
+			<div class="team-score">
+				<h3>HOME</h3>
+				<h2 id="homeScore" class="score">0</h2>
+				<div class="buttons-wrapper">
+					<button class="addScore" onclick="addHomePoint(1)">+1</button>
+					<button class="addScore" onclick="addHomePoint(2)">+2</button>
+					<button class="addScore" onclick="addHomePoint(3)">+3</button>
+				</div>
+
+			</div>
+			<button id="resetBtn" onclick="resetScore()">Reset Score</button>
+			<div class="team-score">
+				<h3>GUEST</h3>
+				<h2 id="guestScore" class="score">0</h2>
+				<div class="buttons-wrapper">
+					<button class="addScore" onclick="addGuestPoint(1)">+1</button>
+					<button class="addScore" onclick="addGuestPoint(2)">+2</button>
+					<button class="addScore" onclick="addGuestPoint(3)">+3</button>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
